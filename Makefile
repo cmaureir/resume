@@ -7,7 +7,7 @@ pdf:  $(PDFCV)
 	@rubber	--pdf	$<
 clean:
 	@rubber	--clean	--pdf	$(TEXCV:latex/.tex=)
-	@rm	-f	*.{vrb,out}
+	@rm -f *.{vrb,out}
 
 .PHONY: pdf clean
 
