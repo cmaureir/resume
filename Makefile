@@ -8,6 +8,8 @@ pdf:  $(PDFCV)
 clean:
 	@rubber	--clean	--pdf	$(TEXCV:latex/.tex=)
 	@rm -f *.{vrb,out}
+x:
+	@okular *.pdf
 
 .PHONY: pdf clean
 
