@@ -4,7 +4,10 @@ PDFCV = $(TEXCV:.tex=.pdf)
 pdf:  $(PDFCV)
 
 %.pdf: %.tex
-	@rubber	--pdf	$<
+	@xelatex $<
+	@bibtex cv-en.aux
+	@xelatex $<
+	@xelatex $<
 clean:
 	@rubber	--clean	--pdf	$(TEXCV:latex/.tex=)
 	@rm -f *.{vrb,out}

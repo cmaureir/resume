@@ -1,21 +1,43 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[12pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot{Cristián Maureira-Fredes | \textcolor{color1}{2016}}
+
+% Font
+\usepackage{fontspec}
+\setmainfont{Fira Sans Light}
+
 \newcommand{\myname}{\textbf{Cristián Maureira}}
-\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}
+\newcommand{\mynamefull}{\textbf{C. Maureira-Fredes}}
+
+\usepackage[scale=0.76]{geometry}
+
+\setlength{\hintscolumnwidth}{2.2cm} % changing left column
+
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
-\AtBeginDocument{\recomputelengths}
+%\AtBeginDocument{\recomputelengths}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Personal Information
-\firstname{\Huge Cristián}
-\familyname{\Huge Maureira-Fredes}
-\title{\large M.Sc. Computer Science (Informatics Engineer)}
+\firstname{\huge Cristián}
+\familyname{\huge Maureira-Fredes}
+\title{\Large M.Sc. Computer Science\newline
+Informatics Engineer}
 \address{Gerdeschützenweg 11B, D-12203}{Berlin, Germany}
 \mobile{+49 152 5695 6241}
-\phone{+49 331 567 7323}
+%\phone{+49 331 567 7323}
 %\fax{fax (optional)}
-\email{cristian.maureira.fredes@aei.mpg.de}
+\email{cmaureirafredes@gmail.com}
+%\homepage{maureira.xyz}
+%\social[linkedin][www.linkedin.com/in/cmaureir]{Cristian Maureira Fredes}
+%\social[twitter][twitter.com/cmaureir]{cmaureir}
+%\social[github][github.com/cmaureir]{cmaureir}
+\extrainfo{
+\includegraphics[width=0.023\textwidth]{icon/Linkedin.pdf} \href{https://www.linkedin.com/in/cmaureir}{Cristián Maureira Fredes}\\
+\includegraphics[width=0.023\textwidth]{icon/GitLab_Logo.pdf} \href{http://gitlab.com/u/cmaureir}{cmaureir}\\
+\includegraphics[width=0.023\textwidth]{icon/GitHub_Logo.pdf} \href{http://github.com/cmaureir}{cmaureir}}
 %\extrainfo{asdf}
 %\photo[64pt]{photo/me}
 %\quote{Curriculum Vitae}
@@ -26,41 +48,43 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education
-\section{Education}
+\vspace{-1cm}
+\section{\LARGE Education}
 
-\cventry{2013 to present}
-        {PhD Student}
-        {Max-Planck-Institut für Gravitationsphysik}
-        {(Albert-Einstein-Institut)}
-        {Potsdam, Golm}
+\cventry{\textcolor{color1}{2013 to present}}
+        {Ph.D Student}
+        {Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut)}
+        {}
+        {Potsdam-Golm}
         {Germany}
 \cventry{2011 to 2013}
         {M.Sc. Computer Science}
-        {Universidad Técnica Federico Santa María}
-        {Valparaiso}
-        {Chile}
+        {Universidad Técnica Federico Santa María (UTFSM)}
         {}
+        {Valparaíso}
+        {Chile}
 \cventry{2006 to 2013}
         {Informatics Engineering}
-        {Universidad Técnica Federico Santa María}
-        {Valparaiso}
-        {Chile}
+        {Universidad Técnica Federico Santa María (UTFSM)}
         {}
+        {Valparaíso}
+        {Chile}
 %\cventry{1993-2005}
 %        {Elementary and High School}
 %        {Instituto del Puerto}
-%        {San Antonio, Valparaiso}
+%        {San Antonio, Valparaíso}
 %        {}{}
 
-\vspace{-0.5cm}
+%\vspace{-0.5cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience
-\section{Experience}
-\subsection{Vocational}
+\section{\LARGE Experience}
+\subsection{\Large Vocational}
+\vspace{0.3cm}
 
-\cventry{May 2012 to November 2012}
+\cventry{May 2012 to Nov 2012}
         {Master Student (Visitor)}
-        {Master thesis development, which consist in a %
+        {Thesis development, %
         ``A modular, GPU-based, direct-summation $N-$body integrator'' }
         {Max-Planck-Institut für Gravitationphysik (Albert-Einstein-Institute)}
         {Germany}
@@ -68,190 +92,188 @@
 
 \cventry{2011 to 2012}
         {CTI-HPC Research Assistant}
-        {Researching Astronomical simulations using GPU technologies, %
-        and parallel computing projects in general, like High Frequency Trading using
-        HPC in Neural Networks evaluation and Image processing, among others.}
+        {Researching %
+         Astronomical simulations using GPU technologies, %
+         High Frequency Trading using HPC in Neural Networks evaluation %
+         and Image processing and analysis, among others HPC-related projects.
+         Officially named a CUDA Teaching Center by NVIDIA
+         (\url{https://blogs.nvidia.com/blog/2011/09/16/new-cuda-research-and-teaching-centers-announced/})
+         }
         {Center for Technological Innovation in High Performance Computing (CTI-HPC)}
         {UTFSM, Chile}
-        {\url{http://hpc.cl}}
+        {}
 
 \cventry{2011 to 2012}
-        {ALMA-UTFSM Representative}
-        {In charge of the national and international representation, and
-        coordination of the ALMA-UTFSM group, which was a collaboration between
-        the ALMA Project (including ESO and the NRAO) and the UTFSM.}
+        {ALMA-UTFSM Representative and developer}
+        {In charge of the national and international representation of the group,
+         coordinating projects in collaboration with the ALMA observatory
+         (including ESO and the NRAO) at the UTFSM.}
         {Computer Systems Research Group (CSRG)}
         {UTFSM, Chile}
-        {\url{http://csrg.inf.utfsm.cl/proyectos/alma-utfsm/}}
+        {\url{http://www.csrg.cl/portal/alma-utsfm/}}
 
 \cventry{2010 to 2011}
         {ARM Research Group Member}
         {Research ARM architecture systems for the development of micro computers
          with low energy consumption}
         {Computer Systems Research Group (CSRG)}
-        {UTFSM}
-        {\url{http://csrg.inf.utfsm.cl/proyectos/arm/}}
+        {UTFSM, Chile}
+        {\url{http://www.csrg.cl/portal/arm/}}
 
 \cventry{2010 to 2011}
         {Assistantship}
         {Courses: Scientific Computing I and II}
-        {Informatics Department, UTFSM}
-        {Chile}{}
+        {Informatics Department}
+        {UTFSM, Chile}
+        {}
 
-\cventry{2009 July to 2012}
+\cventry{Jul 2009 to 2012}
         {ALMA-UTFSM Research (Project leader)}
-        {Project Leader of Software development, Analysis and Testing (SWAT) Team, in charge of the development of the software at the ALMA-UTFSM group.
-        Maintenance and development of the Sampling System project, build upon the ALMA Common Software framework.
-        Also, a member of Alarms Configuration GUI, with the propose of develop a Graphic User Interface to configure the ACS Alarms System}
+        {Project Leader of ``Software development, Analysis and Testing (SWAT)''
+         Team, in charge of the development of the software at the ALMA-UTFSM group.
+         Maintenance and development of the ``Sampling System GUI'' project,
+         build upon the ALMA Common Software framework (ACS).
+         Member of ``Alarms Configuration GUI'', with the propose of develop a
+         Graphic User Interface to configure the ACS Alarms System}
         {Computer Systems Research Group (CSRG)}
-        {UTFSM}
-        {\url{http://csrg.inf.utfsm.cl/proyectos/alma-utfsm/}}
+        {UTFSM, Chile}
+        {\url{http://www.csrg.cl/portal/alma-utfsm/}}
 
 \cventry{2008 to 2009}
         {Project Leader}
-        {$\mu$Bot Interface, A Generic Graphic User Interface to robotic platform control}
-        {A ``Vortex Labs'' project}
-        {PIE>A, Sponsored Project, UTFSM, http://www.piea.usm.cl}
+        {$\mu$Bot Interface, A Generic Graphic User Interface to robotic platform
+        control, a ``Vortex Labs'' project, PIE>A Sponsored Project}
         {Computer Systems Research Group (CSRG)}
+        {UTFSM, Chile}
+        {\url{http://www.piea.usm.cl}}
 
-\cventry{2008 August to 2009 July}
+\cventry{Aug 2008 to Jul 2009}
         {ALMA-UTFSM Research (Assistantship)}
-        {Member of Software development, Analysis and Testing (SWAT) Team, in charge of the development of the software at the ALMA-UTFSM group.
-        Maintenance and development of the Sampling System project, build upon the ALMA Common Software framework.
-        Also, a member of Repackaging ACS for Embedded Systems, with the propose of separate the run-time and development
+        {Member of ``Software development, Analysis and Testing'' (SWAT) Team,
+        in charge of the development of the software at the ALMA-UTFSM group.
+        Maintenance and development of the ``Sampling System GUI'' project,
+        build upon the ALMA Common Software framework (ACS).
+        Member of the ``Repackaging ACS for Embedded Systems project'' (RAES),
+        with the purpose of separate the run-time and development
         proper of this build environment}
         {Computer Systems Research Group (CSRG)}
-        {UTFSM}
-        {\url{http://csrg.inf.utfsm.cl/proyectos/alma-utfsm/}}
+        {UTFSM, Chile}
+        {\url{http://www.csrg.cl/portal/alma-utfsm/}}
 
 \cventry{2008 to 2009}
         {Project Member}
-        {Rescue Live CD, A Fedora official Spin release}
-        {PIE>A, Sponsored Project, UTFSM}
+        {Rescue Live CD, A Fedora official Spin release,
+         PIE>A, Sponsored Project}
         {Computer Systems Research Group (CSRG)}
+        {UTFSM, Chile}
         {\url{http://www.piea.usm.cl}}
 
-\cventry{2008 March to December}
+\cventry{Mar 2008 to Dec 2008}
         {Assistantship}
-        {Courses: Informatics Fundamentals  I and II}
-        {Computer Science Department, UTFSM}
-        {Chile}{}
+        {Courses: Informatics Fundaments  I and II}
+        {Informatics Department}
+        {UTFSM, Chile}
+        {}
 
 \cventry{2007 to 2008}
         {Computer Laboratory Assistantship}
-        {Member of the Computer Laboratory (LabComp), laboratory in charge of all the Computer Science Student's services, performing the tasks of system administrator, networking, scripting development, and teaching Linux courses}
+        {Member of the ``Computer Laboratory'' (LabComp),
+         laboratory in charge of all the Informatics Student services,
+         performing the tasks of system administrator (networking, scripting and
+         teaching Linux courses)}
         {UTFSM, Chile}
         {\url{http://labcomp.inf.utfsm.cl}}{}
 
-\cventry{2007 July to December}
+\cventry{Jul 2007 to Dec 2007}
         {Programming Laboratory Assistantship}
         {C language}
-        {Computer Science Department, UTFSM}
-        {Valparaiso}
-        {Chile}
+        {Informatics Department}
+        {UTFSM, Chile}
+        {}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Internships
-\subsection{Internships}
+\section{\LARGE Experience}
+\subsection{\Large Internships}
+\vspace{0.3cm}
 
 \cventry{2011}{Professional Internship}
         {Universidad Técnica Federico Santa María (UTFSM)}
         {Center for Technological Innovation in High Performance Computing (CTI-HPC)}
-        {Working on the implementation of a gravitational $N$-body simulation, using different parallel computing approaches, as POSIX threads, OpenMP and GPU Computing.}
-        {Valparaiso, Chile, \url{http://hpc.cl}}
+        {Working on the implementation of a gravitational $N$-body simulation,
+         using different parallel computing approaches, as POSIX threads, OpenMP
+         and GPU Computing.}
+        {UTFSM, Chile}
+        {}
 
 \cventry{2010}{Professional Internship}
         {Universidad Técnica Federico Santa María (UTFSM)}
-        {Computer Systems Research Group (CSRG)}
-        {Working on the implementation of an alternative to the ALMA Common Software (ACS) Notification Channel using OpenDDS, \url{http://www.opendds.org/}}
-        {Valparaiso, Chile, \url{http://csrg.cl}}
+        {Working on the implementation of an alternative to the ALMA Common
+         Software (ACS) Notification Channel using OpenDDS, \url{http://www.opendds.org/}}
+        {UTFSM, Chile}
+        {\url{http://csrg.cl}}
 
 \cventry{2009}{Professional Internship}
         {Associated Universities Incorporated (AUI), Joint ALMA Observatory}
-        {Working on the Java implementation of the ACS Basic Control Interface Specification; Developing a GUI tool to perform test in the Antenna Bus Master (ABM) and Teaching a Python Course to engineers and scientific people working on the ALMA project.}
-        {Operations Support Facility (OSF)}
-        {Atacama, Chile, \url{http://www.almaobservatory.cl}}
+        {Working on the Java implementation of the ACS Basic Control Interface
+         Specification; Developing a GUI tool to perform test in the Antenna Bus
+         Master (ABM) and Teaching a Python Course to engineers and scientific
+         people working on the ALMA project.}
+        {Operations Support Facility (OSF), Atacama, Chile}
+        {\url{http://www.almaobservatory.cl}}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Misc
-%\subsection{Miscellaneous}
-%
-%\cventry{2010}
-%        {Technical Organization Team Member}
-%        {PASI 2011}
-%        {Pan-American Advance Studies Institute}
-%        {\url{http://www.bu.edu/pasi/}}
-%        {}
-%
-%\cventry{2009}
-%        {Co-director and founder}
-%        {Arch Linux Chile}
-%        {Arch Linux Chilean user community}
-%        {\url{http://www.archlinux.cl}}
-%        {}
-%
-%\cventry{2007 to 2009}
-%        {Organization Team Member}
-%        {Computer Science Promote}
-%        {Computer Science Department, UTFSM}
-%        {\url{http://promocion.inf.utfsm.cl}}
-%        {}
-%
-%\cventry{2008 to 2009}
-%        {Organization Team Member}
-%        {Computer Science Talks Series}
-%        {\url{http://cci.inf.utfsm.cl}}
-%        {}{}
-%
-%\cventry{2007 to 2008}
-%        {Coordination}
-%        {Technical Talks Series}
-%        {Computer Science Department, UTFSM}
-%        {}{}
-
-%\cventry{2007 October}
-%        {Organization Team Member}
-%        {UTFSM Software Fair}
-%        {\url{http://www.feriasoftware.cl/}}
-%        {}{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Languages
-\section{Languages}
-\cvlanguage{Spanish}{Native}{Speaks, Reads, Writes, Technical and Colloquial}
-\cvlanguage{English}{Medium}{Speaks, Reads, Writes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Computer Science Skills
-\section{Computer Science skills}
-\cvcomputer{Programming Languages}{C/C++, Python, Java, Bash, }
-           {Parallel Computing}{CUDA, MPI, OpenMP, POSIX threads}
-\cvcomputer{Operating Systems}{Linux Distributions and Windows}
-           {Miscellaneous}{ZeroMQ, CUDA Libraries (cuSPARSE, cuBLAS), SciPy, Intel MKL}
-\cvcomputer{System Administration}{Apache, PHP, MySQL, Git, SVN}
-           {Web Development}{PHP, CSS, MySQL, HTML, JavaScript}
+\section{\LARGE Computer Science skills}
+\cvcomputer{\textcolor{color1}{Main Languages}}{C/C++, Python, CUDA, Bash}
+           {\textcolor{color1}{Secondary Languages}}{Fortran, Java, Matlab, R}
+\cvcomputer{\textcolor{color1}{Parallel Computing}}{OpenMPI, OpenMP, POSIX threads}
+           {\textcolor{color1}{Libraries}}{ZeroMQ, cuBLAS, SciPy, Intel MKL}
+%\cvcomputer{Operating Systems}{Linux Distributions and Windows}
+\cvcomputer{\textcolor{color1}{SysAdmin}}{LAMP, Git, SVN}
+           {\textcolor{color1}{WebDev}}{PHP, CSS, HTML, JavaScript, MySQL, Jekyll}
+\cvcomputer{\textcolor{color1}{Learning}}{Go, Haskell}
+           {}{}
 
-\section{Events attendance}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Languages
+\newpage
+\section{\LARGE Languages}
+\cvlanguage{\textcolor{color1}{Spanish}}{Native}{-}
+\cvlanguage{\textcolor{color1}{English}}{Fluent}{Speaks, Reads, Writes, Technical and Colloquial}
+\cvlanguage{\textcolor{color1}{German}}{Competent (A1)}{Speaks, Reads, Writes}
+
+
+\section{\LARGE Events attendance}
+\cventry{2016}
+        {Astro-GR, What can we learn from the first GW detection? \emph{(Invited talk)}}
+        {Centro de Ciencias de Benasque Pedro Pascual}
+        {Benasque, Spain}
+        {\url{http://astro-gr.org/astro-gr-benasque-2016-what-can-we-learn-from-first-gw-detection/}}
+        {}
+
 \cventry{2014}
-        {IAU Symposium \#312}
+        {IAU Symposium \#312 \emph{(Poster presentation)}}
         {GraviDy, a modular, GPU-based, direct-summation $N-$body integrator}
         {Star Clusters and Black Holes in Galaxies across Cosmic Time}
         {Beijing, China}
         {\url{http://silkroad.bao.ac.cn/iaus312}}
 
 \cventry{2014}
-        {Astro-GR}
+        {Astro-GR, Gravitational waves and electromagnetic observations of dense
+        stellar systems. \emph{(Invited talk)}}
         {INAF- Osservatorio Astronomico di Roma}
         {Frascati, Italy}
         {\url{http://members.aei.mpg.de/amaro-seoane/astro-gr-rome/}}
         {}
 
 \cventry{2013}
-        {3rd Aarseth Meeting}
-        {Argelander-Institut fuer Astronomie (University of Bonn)}
+        {3rd Aarseth Meeting, on stellar dynamics.}
+        {Argelander-Institut für Astronomie (University of Bonn)}
         {Bonn, Germany}
         {\url{http://www.astro.uni-bonn.de/~sambaran/christmas_nbody2013/christmas_nbody2013.html}}
         {}
 
 \cventry{2012}
-        {Astro-GR}
+        {Astro-GR, Black Hole Growth in the Universe \emph{(Invited talk)}}
         {GraviDy: A modular direct $N-$body GPU integrator}
         {National Astronomical Observatories (NAOC) of Chinese Academy of Sciences
         (CAS)}
@@ -266,136 +288,95 @@
         {}
 
 \cventry{2011}
-        {HPC School}
         {High Performance Computing School}
+        {(HPC School)}
         {CMCC, Universidad de la Frontera (UFRO)}
         {Temuco, Chile}
         {\url{http://www.cmcc.ufro.cl/hpc2011/}}
 
 \cventry{2010}
-        {PASI}
         {Pan-American Advanced Studies Institute}
+        {(PASI)}
         {Scientific Computing in the Americas: the challenge of massive parallelism}
-        {UTFSM, Valparaiso, Chile}
+        {UTFSM, Valparaíso, Chile}
         {\url{http://www.bu.edu/pasi/}}
 
 \cventry{2009}
         {EVIC}
-        {VI Escuela de Verano Latino-americana en Inteligencia Computacional, %
-        III Encuentro de Verano Latino-americana en Robótica}
+        {VI Latin-american summer school in Computational Intelligence, %
+         III Latin-american Robotics summer meeting}
         {Universidad de Chile}
         {Santiago}
+        {\url{http://www.uchile.cl}}
+
+\cventry{2008, 2009}
+        {ALMA Common Software Workshop}
+        {Attendance to the general meeting and final course (Advanced) of the ALMA
+        Common Software workshop, developed in joint with the Atacama Large
+        Millimiter/Submillimeter Array project.}
+        {UTFSM}
+        {Valparaíso}
         {}
 
 \cventry{2009}
-        {XVIII Feria de Software}
-        {Presentation of $\mu$Bot Interface project}
-        {UTFSM}
-        {Valparaiso}
-        {\url{http://vortexlabs.cl}}
-
-\cventry{2009}
-        {ACS Workshop}
-        {Attendance to the general meeting and final course (Advanced)}
-        {UTFSM}
-        {Valparaiso}
-        {}
-
-\cventry{2009}
-        {SCAT}
         {Scientific Computing Advanced Training}
+        {(SCAT)}
         {Final SCAT Meeting \& Satellite School}
         {UTFSM, Chile}
         {}
 
-\cventry{2009}
-        {Encuentro Nacional de Computación}
-        {Jornadas Chilenas de la Computación}
-        {}
-        {}
-        {\url{http://jcc2009.usach.cl/}}
-
-\cventry{2008 and 2009}
-        {FLiSol}
-        {Latin American Free Software Installation Festival}
-        {Valparaiso}
-        {}
-        {}
-
-\cventry{2008}
-        {ACS Workshop}
-        {Attendance to the general meeting and final course (Basic)}
-        {UTFSM}
-        {Valparaiso}
-        {}
-
-\cventry{2007, 2008 and 2009}
-        {Encuentro Linux}
-        {National gathering of Linux users}
-        {Chile}
-        {}
-        {}
-
-%\section{Interests and Hobbies}
-%\cvlistdoubleitem[\Neutral]{Playing Online Games}
-%                           {Design and Development of Websites}
-%\cvlistdoubleitem[\Neutral]{Graphic Design in general}
-%                           {Play some instruments (Guitar, Flute)}
-%\cvlistdoubleitem[\Neutral]{Role Playing}
-%                           {Movies in general, dvd, cinema, etc}
-%\cvlistdoubleitem[\Neutral]{Coin Collection}
-%                           {Music Composition}
-
-\renewcommand{\listitemsymbol}{-}
-\section{Honor and Awards}
-\cvlistitem{Scholarships for Master Studies in Chile (2012) given by the %
+%\renewcommand{\listitemsymbol}{-}
+\renewcommand*{\listitemsymbol}{\hspace{2em}\labelitemi~}
+\section{\LARGE Honor and Awards}
+\cvlistitem{Master studies scholarship in Chile (2012) given by the %
             ``Comisión Nacional de Investigación Científica y Tecnológica  %
             (CONICYT)'' to students with a good academic performance and
-            participation in academic research projects (\texttt{www.conicyt.cl}).}
-
+            participation in academic research projects (\url{www.conicyt.cl}).}
+\vspace{0.2cm}
 \cvlistitem{Initiation in Scientific Research Scholarship (PIIC) given by %
             ``Dirección General de Investigación y Postgrado UTFSM'',
-            to students with academic research interest during Masters
-            studies.}
-
-\cvlistitem{Master's Studies Financial help, and Fee payment exemption scholarship
-            100\%, due to good academic performance.
-            ``Dirección General de Investigación y Postgrado UTFSM''.}
-
-
+            to students with academic research interest during Master
+            studies. (\url{http://www.dgip.utfsm.cl/})}
+\vspace{0.2cm}
+\cvlistitem{Master studies scholarship, financial help,
+            and 100\% fee payment exemption due to good academic performance.
+            ``Dirección General de Investigación y Postgrado UTFSM''
+            (\url{http://www.dgip.utfsm.cl/})}
+\vspace{0.2cm}
 \cvlistitem{Be a part of the \emph{Honor List}, to the best academic %
             performance among all the students in the Universidad Técnica
             Federico Santa María (UTFSM).
             Years 2007, 2008, 2009, 2010, 2011 and 2012.}
 
-%\cvlistitem{First Place in Academic Performance, Instituto del Puerto %
-%            (high school), '05 generation.}
-
-\section{References}
+\section{\LARGE References}
     \cventry{}
             {Pau Amaro-Seoane}
             {Senior Scientist}
             {Max-Planck-Institut für Gravitationphysik (Albert-Einstein-Institut)}
-            {\url{Pau.Amaro-Seoane@aei.mpg.de}}
-            {}
+            {\url{http://astro-gr.org}}
+            {\texttt{pau.amaro.seoane@gmail.com}}
 
+\vspace{0.3cm}
     \cventry{}
             {Horst Von Brand}
             {Central Department of Computational Services Director}
             {Universidad Técnica Federico Santa María}
-            {\url{vonbrand@inf.utfsm.cl}}
+            {\texttt{vonbrand@inf.utfsm.cl}}
             {}
 
+\vspace{0.3cm}
     \cventry{}
             {Cecilia Reyes}
-            {Computer Science Department Adjoint Professor}
+            {Informatics Department Adjoint Professor}
             {Universidad Técnica Federico Santa María}
-            {\url{reyes@inf.utfsm.cl}}
+            {\texttt{reyes@inf.utfsm.cl}}
             {}
 
+\vspace{0.8cm}
 %\section{Publications}
 % Publications from a BibTeX file
 \nocite{*}
 \bibliographystyle{unsrt}
+\renewcommand\refname{\LARGE Publications}
 \bibliography{latex/pub-en}
 \end{document}
