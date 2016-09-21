@@ -1,31 +1,30 @@
 \documentclass[12pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
+\usepackage[scale=0.76]{geometry}
+
+% Footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lfoot{Cristián Maureira-Fredes | \textcolor{color1}{2016}}
+\lfoot{Cristián Maureira-Fredes | \cc{2016}}
 
-% Font
-\usepackage{fontspec}
-\setmainfont{Fira Sans Light}
-
+% Commands
 \newcommand{\myname}{\textbf{Cristián Maureira}}
 \newcommand{\myeman}{\textbf{Maureira, Cristián}}
 \newcommand{\mynamefull}{\textbf{C. Maureira-Fredes}}
 \newcommand{\utfsm}{Universidad Técnica Federico Santa María (UTFSM)}
 \newcommand{\valpo}{Valparaíso, Chile}
-
 \newcommand{\gray}{\textcolor{gray}}
 \newcommand{\myurl}[1]{\gray{\url{#1}}}
 \newcommand{\aei}{Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut)}
+\newcommand{\cc}{\textcolor{color1}}
 
-\usepackage[scale=0.76]{geometry}
+% Font
+\usepackage{fontspec}
+\setmainfont{Fira Sans Light}
 
-\setlength{\hintscolumnwidth}{2.2cm} % changing left column
-
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
-%\AtBeginDocument{\recomputelengths}
-
+% Left column lenght
+\setlength{\hintscolumnwidth}{2.2cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Personal Information
 \firstname{\huge Cristián}
@@ -38,17 +37,11 @@ Informatics Engineer}
 %\fax{fax (optional)}
 \email{cmaureirafredes@gmail.com}
 %\homepage{maureira.xyz}
-%\social[linkedin][www.linkedin.com/in/cmaureir]{Cristian Maureira Fredes}
-%\social[twitter][twitter.com/cmaureir]{cmaureir}
-%\social[github][github.com/cmaureir]{cmaureir}
 \extrainfo{
 \includegraphics[width=0.023\textwidth]{icon/Linkedin.pdf} \href{https://www.linkedin.com/in/cmaureir}{Cristián Maureira Fredes}\\
 \includegraphics[width=0.023\textwidth]{icon/GitLab_Logo.pdf} \href{http://gitlab.com/u/cmaureir}{cmaureir}\\
 \includegraphics[width=0.023\textwidth]{icon/GitHub_Logo.pdf} \href{http://github.com/cmaureir}{cmaureir}}
-%\extrainfo{asdf}
-%\photo[64pt]{photo/me}
-%\quote{Curriculum Vitae}
-%\nopagenumbers{}
+%\photo[82pt]{photo/me}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document
 \begin{document}
@@ -58,7 +51,7 @@ Informatics Engineer}
 \vspace{-1cm}
 \section{\LARGE Education}
 
-\cventry{\textcolor{color1}{\textbf{2013 to\\ present}}}
+\cventry{\cc{\textbf{2013 to\\ present}}}
         {Doctoral Student}
         {\aei}
         {}
@@ -231,22 +224,22 @@ Informatics Engineer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Computer Science Skills
 \section{\LARGE Computer Science skills}
-\cvcomputer{\textcolor{color1}{Main Languages}}{C/C++, Python, CUDA, Bash}
-           {\textcolor{color1}{Secondary Languages}}{Fortran, Java, Matlab, R}
-\cvcomputer{\textcolor{color1}{Parallel Computing}}{OpenMPI, OpenMP, POSIX threads}
-           {\textcolor{color1}{Libraries}}{ZeroMQ, cuBLAS, SciPy, Intel MKL}
+\cvcomputer{\cc{Main Languages}}{C/C++, Python, CUDA, Bash}
+           {\cc{Secondary Languages}}{Fortran, Java, Matlab, R}
+\cvcomputer{\cc{Parallel Computing}}{OpenMPI, OpenMP, POSIX threads}
+           {\cc{Libraries}}{ZeroMQ, cuBLAS, SciPy, Intel MKL}
 %\cvcomputer{Operating Systems}{Linux Distributions and Windows}
-\cvcomputer{\textcolor{color1}{SysAdmin}}{LAMP, Git, SVN}
-           {\textcolor{color1}{WebDev}}{PHP, CSS, HTML, JavaScript, MySQL, Jekyll}
-\cvcomputer{\textcolor{color1}{Learning}}{Go, Haskell}
+\cvcomputer{\cc{SysAdmin}}{LAMP, Git, SVN}
+           {\cc{WebDev}}{PHP, CSS, HTML, JavaScript, MySQL, Jekyll}
+\cvcomputer{\cc{Learning}}{Go, Haskell}
            {}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Languages
 \newpage
 \section{\LARGE Languages}
-\cvlanguage{\textcolor{color1}{Spanish}}{Native}{-}
-\cvlanguage{\textcolor{color1}{English}}{Fluent}{Speaks, Reads, Writes, Technical and Colloquial}
-\cvlanguage{\textcolor{color1}{German}}{Competent (A1)}{Speaks, Reads, Writes}
+\cvlanguage{\cc{Spanish}}{Native}{-}
+\cvlanguage{\cc{English}}{Fluent}{Speaks, Reads, Writes, Technical and Colloquial}
+\cvlanguage{\cc{German}}{Competent (A1)}{Speaks, Reads, Writes}
 
 
 \section{\LARGE Events attendance}
