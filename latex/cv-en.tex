@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.76]{geometry}
@@ -6,7 +6,7 @@
 % Footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lfoot{Cristián Maureira-Fredes | \cc{2016}}
+\lfoot{Cristián Maureira-Fredes | \cc{2018}}
 
 % Commands
 \newcommand{\myname}{\textbf{Cristián Maureira}}
@@ -22,6 +22,7 @@
 % Font
 \usepackage{fontspec}
 \setmainfont{Fira Sans Light}
+%\setmainfont{Myriad Pro}
 
 % Left column lenght
 \setlength{\hintscolumnwidth}{2.2cm}
@@ -29,7 +30,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Personal Information
 \firstname{\huge Cristián}
 \familyname{\huge Maureira-Fredes}
-\title{\Large M.Sc. Computer Science\newline
+\title{\Large M.Sc. Computer Science,\newline
 Informatics Engineer}
 \address{Gerdeschützenweg 11B, D-12203}{Berlin, Germany}
 \mobile{+49 152 5695 6241}
@@ -38,9 +39,12 @@ Informatics Engineer}
 \email{cmaureirafredes@gmail.com}
 %\homepage{maureira.xyz}
 \extrainfo{
-\includegraphics[width=0.023\textwidth]{icon/Linkedin.pdf} \href{https://www.linkedin.com/in/cmaureir}{Cristián Maureira Fredes}\\
-\includegraphics[width=0.023\textwidth]{icon/GitLab_Logo.pdf} \href{http://gitlab.com/u/cmaureir}{cmaureir}\\
-\includegraphics[width=0.023\textwidth]{icon/GitHub_Logo.pdf} \href{http://github.com/cmaureir}{cmaureir}}
+\includegraphics[width=0.023\textwidth]{icon/Linkedin.pdf}\
+\href{https://www.linkedin.com/in/cmaureir}{Cristián Maureira Fredes}\\
+\includegraphics[width=0.023\textwidth]{icon/GitLab_Logo.pdf}\
+\href{http://gitlab.com/u/cmaureir}{https://gitlab.com/cmaureir}\\
+\includegraphics[width=0.023\textwidth]{icon/GitHub_Logo.pdf}\
+\href{http://github.com/cmaureir}{https://github.com/cmaureir}}
 %\photo[82pt]{photo/me}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document
@@ -51,22 +55,28 @@ Informatics Engineer}
 \vspace{-1cm}
 \section{\LARGE Education}
 
+\cventry{\cc{\textbf{2015 to\\ present}}}
+        {Doctoral Student}
+        {Fakultät für Mathematik und Physik}
+        {Leibniz Universität Hannover}
+        {Hannover}
+        {Germany}
 \cventry{\cc{\textbf{2013 to\\ present}}}
         {Doctoral Student}
-        {\aei}
         {}
+        {\aei}
         {Potsdam-Golm}
         {Germany}
 \cventry{2011 to\\2013}
         {M.Sc. Computer Science}
-        {{\utfsm}}
         {}
+        {{\utfsm}}
         {Valparaíso}
         {Chile}
 \cventry{2006 to\\ 2013}
         {Informatics Engineering}
-        {{\utfsm}}
         {}
+        {{\utfsm}}
         {Valparaíso}
         {Chile}
 %\cventry{1993-2005}
@@ -93,12 +103,10 @@ Informatics Engineer}
 \cventry{2011 to\\ 2012}
         {CTI-HPC Research Assistant}
         {Researching %
-         Astronomical simulations using GPU technologies, %
-         High Frequency Trading using HPC in Neural Networks evaluation %
-         and Image processing and analysis, among others HPC-related projects.
-         Officially named a CUDA Teaching Center by NVIDIA
-         (\myurl{https://blogs.nvidia.com/blog/2011/09/16/new-cuda-research-and-teaching-centers-announced/})
-         }
+         Astrophysical simulations using GPU technologies, %
+         High Frequency Trading using CUDA and MKL in Neural Networks evaluation %
+         and Image processing and analysis, among others HPC-related projects.\newline
+         Officially named a CUDA Teaching Center by NVIDIA.}
         {Center for Technological Innovation in High Performance Computing (CTI-HPC)}
         {UTFSM, Chile}
         {}
@@ -223,14 +231,13 @@ Informatics Engineer}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Computer Science Skills
-\section{\LARGE Computer Science skills}
-\cvcomputer{\cc{Main Languages}}{C/C++, Python, CUDA, Bash}
-           {\cc{Secondary Languages}}{Fortran, Java, Matlab, R}
-\cvcomputer{\cc{Parallel Computing}}{OpenMPI, OpenMP, POSIX threads}
+\section{\LARGE Computer Science Skills}
+\cvcomputer{\cc{Main Languages}}{C/C++, Python, CUDA, Shell}
+           {\cc{Secondary Languages}}{Java, Fortan, Matlab/Octave, R}
+\cvcomputer{\cc{Parallel Computing}}{Thrust, MPI, OpenMP, POSIX threads}
            {\cc{Libraries}}{ZeroMQ, cuBLAS, SciPy, Intel MKL}
-%\cvcomputer{Operating Systems}{Linux Distributions and Windows}
 \cvcomputer{\cc{SysAdmin}}{LAMP, Git, SVN}
-           {\cc{WebDev}}{PHP, CSS, HTML, JavaScript, MySQL, Jekyll}
+           {\cc{WebDev}}{PHP, CSS, HTML, JavaScript, SQL, Jekyll}
 \cvcomputer{\cc{Learning}}{Go, Haskell}
            {}{}
 
@@ -239,7 +246,7 @@ Informatics Engineer}
 \section{\LARGE Languages}
 \cvlanguage{\cc{Spanish}}{Native}{-}
 \cvlanguage{\cc{English}}{Fluent}{Speaks, Reads, Writes, Technical and Colloquial}
-\cvlanguage{\cc{German}}{Competent (A1)}{Speaks, Reads, Writes}
+\cvlanguage{\cc{German}}{Waystage or elementary (A2)}{Speaks, Reads, Writes}
 
 
 \section{\LARGE Events attendance}
