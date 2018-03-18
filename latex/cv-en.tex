@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[12pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.76]{geometry}
@@ -19,6 +19,24 @@
 \newcommand{\aei}{Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut)}
 \newcommand{\cc}{\textcolor{color1}}
 
+\definecolor{mred}{RGB}{225,67,46}
+\definecolor{mblue}{RGB}{75,92,105}
+\definecolor{mgreen}{RGB}{121,189,154}
+\definecolor{mcyan}{RGB}{70,197,218}
+\definecolor{mwhite}{RGB}{221,220,215}
+\definecolor{mgray}{RGB}{143,143,143}
+\definecolor{mpetrol}{RGB}{59,134,134}
+\definecolor{mnight}{RGB}{0,180,204}
+
+\newcommand{\mred}{\textcolor{mred}}
+\newcommand{\mblue}{\textcolor{mblue}}
+\newcommand{\mgreen}{\textcolor{mgreen}}
+\newcommand{\mcyan}{\textcolor{mcyan}}
+\newcommand{\mwhite}{\textcolor{mwhite}}
+\newcommand{\mgray}{\textcolor{mgray}}
+\newcommand{\mpetrol}{\textcolor{mpetrol}}
+\newcommand{\mnight}{\textcolor{mnight}}
+
 % Font
 \usepackage{fontspec}
 \setmainfont{Fira Sans Light}
@@ -32,12 +50,12 @@
 \familyname{\huge Maureira-Fredes}
 \title{\Large M.Sc. Computer Science,\newline
 Informatics Engineer}
-\address{Gerdeschützenweg 11B, D-12203}{Berlin, Germany}
-\mobile{+49 152 5695 6241}
+%\address{Gerdeschützenweg 11B, D-12203}{Berlin, Germany}
+%\mobile{+49 152 5695 6241}
 %\phone{+49 331 567 7323}
 %\fax{fax (optional)}
 \email{cmaureirafredes@gmail.com}
-%\homepage{maureira.xyz}
+\homepage{maureira.xyz}
 \extrainfo{
 \includegraphics[width=0.023\textwidth]{icon/Linkedin.pdf}\
 \href{https://www.linkedin.com/in/cmaureir}{Cristián Maureira Fredes}\\
@@ -51,8 +69,8 @@ Informatics Engineer}
 \begin{document}
 \maketitle
 
+%(Earliest possible entry 01.01.2018)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education
-\vspace{-1cm}
 \section{\LARGE Education}
 
 \cventry{\cc{\textbf{2015 to\\ present}}}
@@ -92,6 +110,22 @@ Informatics Engineer}
 \subsection{\Large Vocational}
 \vspace{0.3cm}
 
+\cventry{Current}
+        {Doctoral studies}
+        {Working in the numerical modelling of \cc{Dense Stellar systems}
+        and \cc{Super Massive Black Hole} binaries.\newline
+        My research consist mainly in astrophysical simulations using \cc{HPC}
+        techniques and facilities, to analyse the evolution and properties
+        of different systems.\newline
+        Most of the \cc{analysis} is done processing large simulation data sets,
+        from which a proper extraction of useful astrophysical and statistical
+        information is crucial.
+        }
+        {\aei}
+        {Germany}
+        {\myurl{http://aei.mpg.de}}
+
+\newpage
 \cventry{May 2012 to\\ Nov 2012}
         {Master Student (Visitor)}
         {Thesis development, %
@@ -118,7 +152,7 @@ Informatics Engineer}
          (including ESO and the NRAO) at the UTFSM.}
         {Computer Systems Research Group (CSRG)}
         {UTFSM, Chile}
-        {\myurl{http://www.csrg.cl/portal/alma-utsfm/}}
+        {\myurl{http://www.csrg.cl/portal/alma-utfsm/}}
 
 \cventry{2010 to\\ 2011}
         {ARM Research Group Member}
@@ -142,7 +176,7 @@ Informatics Engineer}
          Maintenance and development of the ``Sampling System GUI'' project,
          build upon the ALMA Common Software framework (ACS).
          Member of ``Alarms Configuration GUI'', with the propose of develop a
-         Graphic User Interface to configure the ACS Alarms System}
+         Graphic User Interface to configure the ACS Alarms System.}
         {Computer Systems Research Group (CSRG)}
         {UTFSM, Chile}
         {\myurl{http://www.csrg.cl/portal/alma-utfsm/}}
@@ -150,7 +184,10 @@ Informatics Engineer}
 \cventry{2008 to\\ 2009}
         {Project Leader}
         {$\mu$Bot Interface, A Generic Graphic User Interface to robotic platform
-        control, a ``Vortex Labs'' project, PIE>A Sponsored Project}
+        control, a ``Vortex Labs'' project, PIE>A Sponsored Project.
+        Application written in Python/C++ using Qt as graphical library.
+        The software included a procedure editor, and a embedded python console
+        to test the routines, XML profiles of each robotic system, etc.}
         {Computer Systems Research Group (CSRG)}
         {UTFSM, Chile}
         {\myurl{http://www.piea.usm.cl}}
@@ -199,6 +236,7 @@ Informatics Engineer}
         {UTFSM, Chile}
         {}
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Internships
 \section{\LARGE Experience}
 \subsection{\Large Internships}
@@ -207,7 +245,7 @@ Informatics Engineer}
 \cventry{2011}{Professional Internship}
         {{\utfsm}}
         {Center for Technological Innovation in High Performance Computing (CTI-HPC)}
-        {Working on the implementation of a gravitational $N$-body simulation,
+        {Working on the implementation of a gravitational $N$-body simulations,
          using different parallel computing approaches, as POSIX threads, OpenMP
          and GPU Computing.}
         {UTFSM, Chile}
@@ -231,24 +269,32 @@ Informatics Engineer}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Computer Science Skills
-\section{\LARGE Computer Science Skills}
-\cvcomputer{\cc{Main Languages}}{C/C++, Python, CUDA, Shell}
-           {\cc{Secondary Languages}}{Java, Fortan, Matlab/Octave, R}
-\cvcomputer{\cc{Parallel Computing}}{Thrust, MPI, OpenMP, POSIX threads}
-           {\cc{Libraries}}{ZeroMQ, cuBLAS, SciPy, Intel MKL}
-\cvcomputer{\cc{SysAdmin}}{LAMP, Git, SVN}
-           {\cc{WebDev}}{PHP, CSS, HTML, JavaScript, SQL, Jekyll}
-\cvcomputer{\cc{Learning}}{Go, Haskell}
+\section{\LARGE Computer Science skills}
+\cvcomputer{\cc{Main Languages}}{C/C++, Python, Bash}
+           {\cc{Secondary Languages}}{Fortran, Java, Octave/Matlab, R}
+\cvcomputer{\cc{Parallel Computing}}{CUDA, OpenMPI, OpenMP, POSIX threads}
+           {\cc{Libraries}}{SciPy, Pandas, Jupyter, ZeroMQ, cuBLAS, Intel MKL, Cython, Boost, SWIG}
+%\cvcomputer{Operating Systems}{Linux Distributions and Windows}
+\cvcomputer{\cc{SysAdmin}}{LAMP, Git, SVN, Jenkins}
+           {\cc{WebDev}}{PHP, CSS, HTML, JavaScript, MySQL, Jekyll}
+\cvcomputer{\cc{Scripting}}{Python, Bash, awk, sed}
+           {\cc{Data bases}}{MySQL, PostgreSQL, MongoDB}
+\cvcomputer{\cc{\textbf{Learning}}}{Scala, Go, AWS, Haskell}
            {}{}
+           % Feature-driven development
+           % Scrum
+           % Kanban
+%\cvcomputer{\cc{Methods}}{Agile development (FDD, Scrum, XP)}
+%           {\cc{Practices}}{Continuous integration (CI)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Languages
-\newpage
 \section{\LARGE Languages}
 \cvlanguage{\cc{Spanish}}{Native}{-}
 \cvlanguage{\cc{English}}{Fluent}{Speaks, Reads, Writes, Technical and Colloquial}
 \cvlanguage{\cc{German}}{Waystage or elementary (A2)}{Speaks, Reads, Writes}
+\cvlanguage{\cc{Catalan}}{Competent (A1)}{Speaks, Reads, Writes}
 
-
+\newpage
 \section{\LARGE Events attendance}
 \cventry{2016}
         {Astro-GR, What can we learn from the first GW detection? \emph{(Invited talk)}}
@@ -276,7 +322,7 @@ Informatics Engineer}
         {3rd Aarseth Meeting, on stellar dynamics.}
         {Argelander-Institut für Astronomie (University of Bonn)}
         {Bonn, Germany}
-        {\myurl{http://www.astro.uni-bonn.de/~sambaran/christmas_nbody2013/christmas_nbody2013.html}}
+        {}%\myurl{http://www.astro.uni-bonn.de/~sambaran/christmas_nbody2013/christmas_nbody2013.html}}
         {}
 
 \cventry{2012}
@@ -332,9 +378,16 @@ Informatics Engineer}
         {UTFSM, Chile}
         {}
 
+\cventry{2007-2009}
+        {Encuentro Linux}
+        {National gathering of Linux users}
+        {Chile}
+        {}
+        {\myurl{http://encuentrolinux.cl}}
+
 %\renewcommand{\listitemsymbol}{-}
 \renewcommand*{\listitemsymbol}{\hspace{2em}\labelitemi~}
-\section{\LARGE Honor and Awards}
+\section{\LARGE Honour and Awards}
 \cvlistitem{Master studies scholarship in Chile (2012) given by the %
             ``Comisión Nacional de Investigación Científica y Tecnológica  %
             (CONICYT)'' to students with a good academic performance and
@@ -350,35 +403,35 @@ Informatics Engineer}
             ``Dirección General de Investigación y Postgrado UTFSM''
             (\myurl{http://www.dgip.utfsm.cl/})}
 \vspace{0.2cm}
-\cvlistitem{Be a part of the \emph{Honor List}, to the best academic %
+\cvlistitem{Be a part of the \emph{Honour List}, to the best academic %
             performance among all the students in the {\utfsm}.
             Years 2007, 2008, 2009, 2010, 2011 and 2012.}
 
-\section{\LARGE References}
-    \cventry{}
-            {Pau Amaro-Seoane}
-            {Senior Scientist}
-            {\aei}
-            {\myurl{http://astro-gr.org}}
-            {\texttt{pau.amaro.seoane@gmail.com}}
+%\newpage
+%\section{\LARGE References}
+%    \cventry{}
+%            {Pau Amaro-Seoane}
+%            {Senior Scientist}
+%            {\aei}
+%            {\myurl{http://astro-gr.org}}
+%            {\texttt{pau.amaro.seoane@gmail.com}}
+%
+%\vspace{0.3cm}
+%    \cventry{}
+%            {Horst Von Brand}
+%            {Central Department of Computational Services Director}
+%            {{\utfsm}}
+%            {\texttt{vonbrand@inf.utfsm.cl}}
+%            {}
+%
+%\vspace{0.3cm}
+%    \cventry{}
+%            {Cecilia Reyes}
+%            {Informatics Department Adjoint Professor}
+%            {{\utfsm}}
+%            {\texttt{reyes@inf.utfsm.cl}}
+%            {}
 
-\vspace{0.3cm}
-    \cventry{}
-            {Horst Von Brand}
-            {Central Department of Computational Services Director}
-            {{\utfsm}}
-            {\texttt{vonbrand@inf.utfsm.cl}}
-            {}
-
-\vspace{0.3cm}
-    \cventry{}
-            {Cecilia Reyes}
-            {Informatics Department Adjoint Professor}
-            {{\utfsm}}
-            {\texttt{reyes@inf.utfsm.cl}}
-            {}
-
-\vspace{0.8cm}
 %\section{Publications}
 % Publications from a BibTeX file
 \nocite{*}
@@ -386,3 +439,4 @@ Informatics Engineer}
 \renewcommand\refname{\LARGE Publications}
 \bibliography{latex/pub-en}
 \end{document}
+
